@@ -2,6 +2,7 @@
   "name": "tslint-eslint-crats",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
