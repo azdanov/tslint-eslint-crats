@@ -20,21 +20,6 @@
     "jest": true
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "trailingComma": "all"
-      }
-    ],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": ["Link"],
-        "specialLink": ["to"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
-      }
-    ],
     "react/jsx-filename-extension": "off",
     "unicorn/filename-case": "off",
     "import/extensions": { "ts": "never", "tsx": "never" },
