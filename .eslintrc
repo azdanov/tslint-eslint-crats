@@ -1,37 +1,23 @@
 {
   "extends": [
     "airbnb",
-    "prettier",
-    "prettier/react",
-    "plugin:prettier/recommended",
     "plugin:jest/recommended",
-    "plugin:unicorn/recommended"
+    "plugin:prettier/recommended",
+    "plugin:unicorn/recommended",
+    "prettier",
+    "prettier/react"
   ],
-  "plugins": ["prettier", "jest", "unicorn"],
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
+  "plugins": ["jest", "prettier", "unicorn"],
   "env": {
-    "es6": true,
     "browser": true,
+    "es6": true,
     "jest": true
   },
-  "rules": {
-    "react/jsx-filename-extension": "off",
-    "unicorn/filename-case": "off",
-    "import/extensions": { "ts": "never", "tsx": "never" },
-    "no-use-before-define": "warn",
-    "no-param-reassign": "warn"
-  },
-  "settings": {
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
-    }
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
   },
   "overrides": [
     {
@@ -41,5 +27,22 @@
         "no-undef": "off"
       }
     }
-  ]
+  ],
+  "rules": {
+    "import/extensions": {
+      "ts": "never",
+      "tsx": "never"
+    },
+    "no-param-reassign": "warn",
+    "no-use-before-define": "warn",
+    "react/jsx-filename-extension": "off",
+    "unicorn/filename-case": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
 }
