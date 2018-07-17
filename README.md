@@ -2,6 +2,8 @@
 
 Using all the tools, all at once.
 
+Run `yarn install` for initial setup.
+
 ## Prettier + TSLint
 
 To use prettier with TSLint you will need [`tslint-config-prettier`](https://github.com/alexjoverm/tslint-config-prettier) which disables all the conflicting rules and optionally [`tslint-plugin-prettier`](https://github.com/ikatyang/tslint-plugin-prettier) which will highlight differences as TSLint issues.
@@ -32,12 +34,12 @@ Example configuration:
 
 ```json
 {
-  "printWidth": 89,
+  "printWidth": 80,
   "tabWidth": 2,
   "useTabs": false,
   "semi": true,
-  "singleQuote": true,
-  "trailingComma": "all",
+  "singleQuote": false,
+  "trailingComma": "none",
   "bracketSpacing": true,
   "jsxBracketSameLine": false
 }
@@ -76,21 +78,6 @@ Example configuration:
     "jest": true
   },
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "trailingComma": "all"
-      }
-    ],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": ["Link"],
-        "specialLink": ["to"],
-        "aspects": ["noHref", "invalidHref", "preferButton"]
-      }
-    ],
     "react/jsx-filename-extension": "off",
     "unicorn/filename-case": "off",
     "import/extensions": { "ts": "never", "tsx": "never" },
