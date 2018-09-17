@@ -484,4 +484,5 @@ __pycache__/
 
 # End of https://www.gitignore.io/api/osx,linux,node,jetbrains,visualstudio,windows
 
-.vscode
+.vscode/
+build/
