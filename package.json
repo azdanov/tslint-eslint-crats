@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.2",
-    "@types/node": "10.9.4",
+    "@types/node": "10.10.0",
     "@types/react": "16.4.13",
     "@types/react-dom": "16.0.7",
     "eslint": "5.5.0",
