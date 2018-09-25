@@ -35,6 +35,6 @@
     "tslint-config-prettier": "1.15.0",
     "tslint-plugin-prettier": "2.0.0",
     "typescript": "3.0.3",
-    "typescript-eslint-parser": "18.0.0"
+    "typescript-eslint-parser": "19.0.1"
   }
 }
